@@ -1,0 +1,20 @@
+ul{
+    background-color: black;
+    color: white;
+    width: 344px;
+    height: 333px;
+}
+.main{
+    background-color: red;
+    color: white;
+}
+.bg{
+    width: 344px;
+    height: 3339px;
+    background-color: aqua;
+    background-image: url('dogs.jpg');
+    background-size: 341px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
