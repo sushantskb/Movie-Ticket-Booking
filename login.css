@@ -17,7 +17,8 @@ main {
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
-  background-color: #ff8c6b;
+  /* background-color: #ff8c6b; */
+  background: url(img/login_bg.jpg);
   padding: 2rem;
   display: flex;
   align-items: center;
@@ -29,9 +30,10 @@ main {
   width: 100%;
   max-width: 1020px;
   height: 640px;
-  background-color: #fff;
+  background-color: #303030;
   border-radius: 3.3rem;
   box-shadow: 0 60px 40px -30px rgba(0, 0, 0, 0.27);
+  opacity: 0.94;
 }
 
 .inner-box {
@@ -87,13 +89,13 @@ form.sign-up-form {
   font-size: 1.1rem;
   margin-top: -9px;
   letter-spacing: -0.5px;
-  color: #151111;
+  color: #141115;
 }
 
 .heading h2 {
   font-size: 2.1rem;
   font-weight: 600;
-  color: #151111;
+  color: #fefefe;
 }
 
 .heading h6 {
