@@ -18,7 +18,7 @@ main {
   min-height: 100vh;
   overflow: hidden;
   /* background-color: #ff8c6b; */
-  background: url(img/login_bg.jpg);
+  background: url(../img/login_bg.jpg);
   padding: 2rem;
   display: flex;
   align-items: center;
