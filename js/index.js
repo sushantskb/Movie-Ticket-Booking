@@ -1,3 +1,28 @@
+//disabling inspect element
+document.addEventListener("contextmenu", (s)=>{
+    s.preventDefault();
+});
+
+document.onkeydown = function(s){
+    if(event.keyCode === 123){
+        return false;
+    }
+    if(s.ctrlKey && s.shiftKey && s.keyCode == "I".charCodeAt(0)){
+        return false;
+    }
+    if(s.ctrlKey && s.shiftKey && s.keyCode == "C".charCodeAt(0)){
+        return false;
+    }
+    if(s.ctrlKey && s.shiftKey && s.keyCode == "J".charCodeAt(0)){
+        return false;
+    }
+    if(s.ctrlKey && s.keyCode == "U".charCodeAt(0)){
+        return false;
+    }
+}
+
+// --end--
+
 // 28th code goes Headers, writing the script for swiper
 var swiper = new Swiper(".popular-content", {
     // 31st code goes Headers, adding slidesPerView
