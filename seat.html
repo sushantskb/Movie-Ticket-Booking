@@ -7,10 +7,113 @@
     <link rel="stylesheet" href="css/seat.css">
 </head>
 <body>
-    
+    <!-- 1st code goes here, making the movie-container -->
+    <div class="movie-container">
+        <label>Pick a movie</label>
+        <select id="movie">
+            <option value="10">Avengers: Endgame</option>
+            <option value="12">Joker</option>
+            <option value="8">Toy Story 4</option>
+            <option value="9">The Lion King</option>
+        </select>
+    </div>
+    <!-- --end-- -->
 
+    <!-- 2nd code goes here, making the showcase -->
+    <ul class="showcase">
+        <li>
+            <div class="seat"></div>
+            <small>N/A</small>
+        </li>
 
+        <li>
+            <div class="seat selected"></div>
+            <small>Selected</small>
+        </li>
 
+        <li>
+            <div class="seat occupied"></div>
+            <small>Occupied</small>
+        </li>
+    </ul>
+    <!-- --end-- -->
+
+    <!-- 3rd code goes here, making the container for seat -->
+    <div class="container">
+        <div class="screen"></div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <!-- --just copied 5 times-- -->
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+        </div>
+
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+        </div>
+    </div>
+    <!-- --end-- -->
+
+    <!-- 4th code goes here, adding the text of how many seat selected -->
+    <p class="text">
+        You have selected <span id="0">0</span> seats for a price of $<span id="0">0</span>
+    </p>
+    <!-- --end-- -->
 
     <!-- --java script-- -->
     <script src="js/seat.js"></script>
