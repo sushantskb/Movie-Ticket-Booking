@@ -59,3 +59,35 @@ body{
     margin-left: 18px;
 }
 /* --end-- */
+
+/* 9th code here, styling the hover according to seat availability */
+.seat:not(.occupied):hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.showcase .seat:not(.occupied):hover{
+    cursor: default;
+    transform: scale(1);
+}
+/* --end-- */
+
+/* 10th code goes here, styling the seat desc */
+.showcase{
+    background-color: rgb(0,0,0,0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #777;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.showcase li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+.showcase li small{
+    margin-left: 10px;
+}
+/* --end-- */
