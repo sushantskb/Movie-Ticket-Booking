@@ -14,14 +14,15 @@ body{
 /* 5th code goes here, styling the seats */
 .seat{
     background-color: #444451;
-    height: 12px;
-    width: 12px;
+    height: 30px;
+    width: 30px;
     margin: 3px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 .row{
     display: flex;
+    margin-bottom: 25px;
 }
 /* --end-- */
 
@@ -43,6 +44,25 @@ body{
 /* --end-- */
 
 /* 7th code goes here, styling the seats colur */
+.seat{
+    position: relative; 
+}
+.seat label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    color: white;
+}
+.seat.occupied label{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    color: rgb(219, 20, 20);
+}
 .seat.selected{
     background-color: #6feaf6;
 }
@@ -53,10 +73,10 @@ body{
 
 /* 8th code goes here, arranging the seats */
 .seat:nth-of-type(2){
-    margin-right: 18px;
+    margin-right: 50px;
 }
 .seat:nth-last-of-type(2){
-    margin-left: 18px;
+    margin-left: 50px;
 }
 /* --end-- */
 
@@ -91,3 +111,24 @@ body{
     margin-left: 10px;
 }
 /* --end-- */
+
+/* 11th code goes here, styling the screen */
+.screen{
+    background-color: #fff;
+    height: 70px;
+    width: 100%;
+    margin: 15px 0;
+    transform: rotateX(-45deg);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.75);
+}
+
+.container{
+    perspective: 1000px;
+    margin-bottom: 30px;
+}
+p.text{
+    margin: 5px 0;
+}
+p.text span{
+    color: #6feaf6;
+}
